@@ -22,17 +22,27 @@ let Widget = new Schema({
         type: String,
         required: true,
     },
-
+    textFieldResult:{
+        type: String,
+        required: true,
+    },
 
     ///////////////////////
 
     /////////Note => type : 1/////////
 
-    textField:{
-        type: String,
+    maxPoint:{
+        type: Number,
         required: true,
     },
-
+    minPoint:{
+        type: Number,
+        required: true,
+    },
+    resultPoint:{
+        type: Number,
+        required: true,
+    },
 
     ///////////////////////
 });

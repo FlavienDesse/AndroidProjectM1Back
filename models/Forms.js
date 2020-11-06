@@ -12,7 +12,15 @@ let FormsSchema = new Schema({
         type:[Widget],
         required: true,
     },
-
+    isClosed:{
+      type:Boolean,
+      required:true,
+      default:false,
+    },
+    smallId:{
+      type:String,
+      required:true,
+    },
 
 });
 
