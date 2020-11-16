@@ -1,5 +1,5 @@
 const app = require('./app.js')
-const connectDb = require(/mongoDbConnection.js');
+const connectDb = require('./mongoDbConnection.js');
 
 
 connectDb().then(() => {
