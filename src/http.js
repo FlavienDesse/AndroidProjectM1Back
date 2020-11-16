@@ -3,7 +3,7 @@ const connectDb = require('./mongodbConnection.js');
 
 
 connectDb().then(() => {
-  app.listen(process.env.PORT ||3000, () => {
+  app.listen(process.env.PORT, () => {
     console.log(`Connect to DB ${process.env.PORT}!`)
   })
 })

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c4af60f-4342-44ee-ade6-888025b7646e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +69,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\src" />
+      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\routes\api" />
+      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\routes\Users" />
+      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\src\middleWare" />
       <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\src\routes\api\Users" />
       <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\src" />
       <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back" />
       <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\routes\api" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\src" />
-      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\routes\api" />
-      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back\routes\Users" />
-      <recent name="C:\Users\Flav-PC\Desktop\AndroidProjectM1Back" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -136,22 +136,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563536404" />
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1605563637034">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1605563895661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563637034" />
-    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1605563637034">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563895661" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1605563895660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563637034" />
-    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1605563637034">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563895660" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1605563895659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563637034" />
-    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1605563637034">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563895659" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1605563895660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563637034" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605563895660" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605521344346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
