@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const Widget = require("./Widget.js").Widget;
 
 
 let FormsSchema = new Schema({
@@ -9,8 +8,12 @@ let FormsSchema = new Schema({
         required: true,
     },
     content:{
-        type:[Widget],
+        type:[{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Widget'
+        }],
         required: true,
+        default: []
     },
     isClosed:{
       type:Boolean,
@@ -27,6 +30,6 @@ let FormsSchema = new Schema({
 
 
 
-let FormsSchema = mongoose.model("FormsSchema", FormsSchema);
+let Forms = mongoose.model("Forms", FormsSchema);
 
-module.exports = FormsSchema;
+module.exports = Forms;

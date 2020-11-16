@@ -1,14 +1,23 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const FormsSchema = require("./Forms").FormsSchema;
+const FormsSchema = require("./Forms").Forms;
 
 
 let UserSchema = new Schema({
     forms:{
-        type: [FormsSchema],
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Forms'
+        }],
         required: false,
+        default: [],
     },
-    userName:{
+    // 0 => peut créer des forms      1 => peut créer des utilisateurs
+    type:{
+        type:Number,
+        required:true,
+    },
+    username:{
         type:String,
         required: true,
         unique:true,

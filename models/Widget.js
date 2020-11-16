@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 
-let Widget = new Schema({
+let WidgetSchema = new Schema({
     title: {
         type: String,
         required: true,
@@ -20,11 +20,11 @@ let Widget = new Schema({
 
     textField:{
         type: String,
-        required: true,
+        default:""
     },
     textFieldResult:{
-        type: String,
-        required: true,
+        type: [String],
+        default:[]
     },
 
     ///////////////////////
@@ -33,21 +33,21 @@ let Widget = new Schema({
 
     maxPoint:{
         type: Number,
-        required: true,
+        default:0
     },
     minPoint:{
         type: Number,
-        required: true,
+        default:0
     },
     resultPoint:{
-        type: Number,
-        required: true,
+        type: [Number],
+        default:[]
     },
 
     ///////////////////////
 });
 
 
-let Widget = mongoose.model("Widget", Widget);
+let Widget = mongoose.model("Widget", WidgetSchema);
 
 module.exports = Widget;

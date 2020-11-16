@@ -1,43 +1,39 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-require('dotenv').config()
+const express = require('express');
+const path = require('path');
+const dotenv = require('dotenv');
+const cors = require('cors')
+const app = express();
+const bodyParser = require('body-parser')
+const cookieParser = require("cookie-parser");
+const corsOptions = {
+  origin: true,
+  credentials: true
+};
 
+dotenv.config();
+app.use(bodyParser.json({ limit: "200mb" }));
+app.use(bodyParser.urlencoded({ limit: "200mb",  extended: true, parameterLimit: 1000000 }));
+app.use(cors(corsOptions))
 
-
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
-var app = express();
-
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+
+global.appRoot = path.resolve(__dirname);
+
+
+
+var router = require('./src/routes/index')
+
+
+app.use('/', router)
+
+
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-
-app.use(function(req, res, next) {
-  next(createError(404));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || process.env.PORT);
-  res.render('error');
-});
+
 
 module.exports = app;
