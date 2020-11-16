@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon http.js "
+    "start": "nodemon http.js ",
+    "heroku-postbuild": "npm build"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
