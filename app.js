@@ -17,6 +17,12 @@ app.use(cors(corsOptions))
 
 app.use(cookieParser());
 
+app.get('/',function (req,res) {
+  res.send({
+        message :"gros pipi"
+      }
+  )
+});
 
 global.appRoot = path.resolve(__dirname);
 

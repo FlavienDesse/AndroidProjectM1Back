@@ -13,12 +13,7 @@ router.post('/createForm',auth,isAtLeastUser,createForm);
 router.post('/closeForm',auth,isAtLeastUser,closeForm);
 router.post('/deleteForm',auth,isAtLeastUser,deleteForm);
 router.post('/getFormById',getFormById);
-router.get('/pisse',function (req,res) {
-    res.send({
-        message :"gros pipi"
-        }
-    )
-});
+
 
 
 
