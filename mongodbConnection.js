@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 
 const connectDb = () => {
-    return mongoose.connect(process.env.DATABASE_URL, {  auth: {user: "Admin",password: "kpyJO8%5$a"},useNewUrlParser: true, useUnifiedTopology: true});
+    return mongoose.connect(process.env.DATABASE_URL, {  auth: {user: "Android",password: "Pmfh9bndrGvUZTc"},useNewUrlParser: true, useUnifiedTopology: true});
 };
 
 
