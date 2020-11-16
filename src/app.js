@@ -22,7 +22,7 @@ app.get("/", function (req, res) {
 
 
 
-var router = require('./src/routes/index')
+var router = require('./routes')
 
 
 app.use('/', router)

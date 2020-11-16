@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon http.js "
+    "start": "nodemon src/http.js "
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
