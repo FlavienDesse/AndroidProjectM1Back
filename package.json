@@ -2,7 +2,8 @@
   "name": "androidprojectm1back",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon src/http.js "
+    "start": "node src/http.js ",
+    "dev": "nodemon --exec \"node -r dotenv/config\" src/server.js dotenv_config_path=.env.development"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
