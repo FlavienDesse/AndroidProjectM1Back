@@ -54,7 +54,7 @@ module.exports =async function (req, res) {
             })
         } else {
             let smallId = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-            
+
             let actualUser = await User.findById(req.user.id);
             if(actualUser){
                 for (let elem of arrayOfCreatedWidget){

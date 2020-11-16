@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c4af60f-4342-44ee-ade6-888025b7646e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mongodbConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleWare/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleWare/isAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleWare/isAtLeastUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleWare/rights.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Forms/closeForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Forms/deleteForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Forms/getFormById.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Forms/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Users/createUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Users/deleteUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Users/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/Users/signOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Forms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +84,7 @@
       <updated>1602445329790</updated>
       <workItem from="1602445332439" duration="42000" />
       <workItem from="1604670717130" duration="7043000" />
-      <workItem from="1605521345579" duration="15774000" />
+      <workItem from="1605521345579" duration="17280000" />
     </task>
     <servers />
   </component>
