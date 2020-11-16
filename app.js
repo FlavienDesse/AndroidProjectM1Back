@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const dotenv = require('dotenv');
 const cors = require('cors')
 const app = express();
@@ -23,9 +22,6 @@ app.get('/',function (req,res) {
       }
   )
 });
-
-global.appRoot = path.resolve(__dirname);
-
 
 
 var router = require('./src/routes/index')
