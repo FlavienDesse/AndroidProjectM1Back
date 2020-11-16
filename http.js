@@ -1,4 +1,4 @@
-const app = require('./app.js')
+const app = require('./app.js');
 const connectDb = require('./mongoDbConnection.js');
 
 
