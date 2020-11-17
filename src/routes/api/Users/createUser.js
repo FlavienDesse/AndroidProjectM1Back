@@ -30,11 +30,11 @@ module.exports = async function (req,res) {
 
         User.findOne({username:username},async function (err,doc) {
             if(err){
-                res.status(402).send(err)
+                res.status(500).send(err)
             }
             else if(doc) {
-                res.status(402).send({
-                    errorMessage: "Name already in database"
+                res.status(202).send({
+                    message: "Name already in database"
                 })
             }
             else{
@@ -49,7 +49,7 @@ module.exports = async function (req,res) {
                             type : 0,
                         });
                         res.status(200).send({
-                            errorMessage : "Success"
+                            message : "Success"
                         })
 
                     }
@@ -58,8 +58,8 @@ module.exports = async function (req,res) {
         });
     }
     else{
-        res.status(402).send({
-            errorMessage : "Incomplete body"
+        res.status(202).send({
+            message : "Incomplete body"
         })
     }
 };

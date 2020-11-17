@@ -7,25 +7,25 @@ module.exports = async function (req, res) {
         if (ObjectId.isValid(req.body._id)) {
             User.findOneAndRemove({_id: req.body._id}, function (err, doc) {
                 if (err) {
-                    res.status(402).send(err)
+                    res.status(500).send(err)
                 } else if (doc === null) {
-                    res.status(402).send({
-                        errorMessage: "Unable to find user with this ID"
+                    res.status(202).send({
+                        message: "Unable to find user with this ID"
                     })
                 } else {
                     res.status(200).send({
-                        errorMessage: "Sucess"
+                        message: "Sucess"
                     })
                 }
             })
         } else {
-            res.status(402).send({
-                errorMessage: "Invalid ID"
+            res.status(202).send({
+                message: "Invalid ID"
             })
         }
     } else {
-        res.status(402).send({
-            errorMessage: "Incomplete body"
+        res.status(202).send({
+            message: "Incomplete body"
         })
     }
 };

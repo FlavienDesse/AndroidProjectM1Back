@@ -7,11 +7,11 @@ module.exports = function (req,res) {
         if (ObjectId.isValid(req.body._id)) {
             Forms.findById((req.body._id),function (err,doc) {
                 if(err){
-                    res.status(422).send(err);
+                    res.status(500).send(err);
                 }
                 else if(!doc) {
-                    res.status(422).send({
-                        errorMessage:"No form found with this ID"
+                    res.status(202).send({
+                        message:"No form found with this ID"
                     });
                 }
                 else{
@@ -19,10 +19,10 @@ module.exports = function (req,res) {
                 }
             })
         } else {
-            res.status(422).send({errorMessage: "bad id provided"});
+            res.status(202).send({message: "bad id provided"});
         }
     } else {
-        res.status(422).send({errorMessage: "missing id"});
+        res.status(202).send({message: "missing id"});
     }
 
 }

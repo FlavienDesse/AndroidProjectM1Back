@@ -11,10 +11,10 @@ module.exports = async function (req, res) {
                 if(actualUser.forms.includes(req.body._id)){
                     Forms.findById(req.body._id).populate("content").exec(async function (error,doc) {
                        if(error){
-                           res.status(422).send(error)
+                           res.status(500).send(error)
                        }
                        else if(!doc){
-                           res.status(422).send({errorMessage: "Form unfindable"});
+                           res.status(202).send({message: "Form unfindable"});
                        }
                        else{
                            let pos = actualUser.forms.findIndex((elem)=>req.body._id === elem)
@@ -25,7 +25,7 @@ module.exports = async function (req, res) {
                            }
                             doc.delete()
                            res.status(200).send({
-                               errorMessage : "Success"
+                               message : "Success"
                            })
                        }
                     })
@@ -34,16 +34,16 @@ module.exports = async function (req, res) {
 
                 }
                 else{
-                    res.status(422).send({errorMessage: "On essaye de hack c'est pas ouf"});
+                    res.status(202).send({message: "On essaye de hack c'est pas ouf"});
                 }
             }
             else{
-                res.status(422).send({errorMessage: "Erreur"});
+                res.status(202).send({message: "Erreur"});
             }
         } else {
-            res.status(422).send({errorMessage: "bad id provided"});
+            res.status(202).send({message: "bad id provided"});
         }
     } else {
-        res.status(422).send({errorMessage: "missing id"});
+        res.status(202).send({message: "missing id"});
     }
 };

@@ -49,8 +49,8 @@ module.exports =async function (req, res) {
 
         }
         if (error) {
-            res.status(402).send({
-                errorMessage: "Incomplete body"
+            res.status(202).send({
+                message: "Incomplete body"
             })
         } else {
             let smallId = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
@@ -78,19 +78,19 @@ module.exports =async function (req, res) {
                 await newForm.save()
 
                 res.status(200).send({
-                    errorMessage : "Success"
+                    message : "Success"
                 })
             }
             else{
-                res.status(200).send({
-                    errorMessage : "Error"
+                res.status(202).send({
+                    message : "Error"
                 })
             }
         }
 
     } else {
-        res.status(402).send({
-            errorMessage: "Incomplete body"
+        res.status(202).send({
+            message: "Incomplete body"
         })
     }
 };

@@ -10,30 +10,30 @@ module.exports = async function (req, res) {
                 if(actualUser.forms.includes(req.body._id)){
                     Forms.findOne({_id: req.body._id},async function (err, doc) {
                         if (err) {
-                            res.status(422).send(err);
+                            res.status(500).send(err);
                         } else if (doc) {
                             doc.isClosed = true;
                             await doc.save()
                             res.status(200).send({
-                                errorMessage : "Success"
+                                message : "Success"
                             })
 
                         } else {
-                            res.status(422).send({errorMessage: "No form found with this id"});
+                            res.status(202).send({message: "No form found with this id"});
                         }
                     })
                 }
                 else{
-                    res.status(422).send({errorMessage: "On essaye de hack c'est pas ouf"});
+                    res.status(202).send({message: "On essaye de hack c'est pas ouf"});
                 }
             }
             else{
-                res.status(422).send({errorMessage: "Erreur"});
+                res.status(202).send({message: "Erreur"});
             }
         } else {
-            res.status(422).send({errorMessage: "bad id provided"});
+            res.status(202).send({message: "bad id provided"});
         }
     } else {
-        res.status(422).send({errorMessage: "missing id"});
+        res.status(202).send({message: "missing id"});
     }
 };

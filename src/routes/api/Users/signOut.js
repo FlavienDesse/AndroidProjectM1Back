@@ -3,6 +3,6 @@ module.exports = function(req, res){
   res.clearCookie("signature");
   res.status(200)
       .send({
-          errorMessage: "User logged out",
+          message: "User logged out",
       });
 };
