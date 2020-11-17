@@ -6,7 +6,7 @@ module.exports = function (req, res, next,level) {
     } else {
         res.status(401).send(
             {
-                message: "You need " + level + " rights to do this action",
+                errorMessage: "You need " + level + " rights to do this action",
             });
     }
 

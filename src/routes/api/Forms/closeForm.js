@@ -15,25 +15,25 @@ module.exports = async function (req, res) {
                             doc.isClosed = true;
                             await doc.save()
                             res.status(200).send({
-                                message : "Success"
+                                errorMessage : "Success"
                             })
 
                         } else {
-                            res.status(422).send({message: "No form found with this id"});
+                            res.status(422).send({errorMessage: "No form found with this id"});
                         }
                     })
                 }
                 else{
-                    res.status(422).send({message: "On essaye de hack c'est pas ouf"});
+                    res.status(422).send({errorMessage: "On essaye de hack c'est pas ouf"});
                 }
             }
             else{
-                res.status(422).send({message: "Erreur"});
+                res.status(422).send({errorMessage: "Erreur"});
             }
         } else {
-            res.status(422).send({message: "bad id provided"});
+            res.status(422).send({errorMessage: "bad id provided"});
         }
     } else {
-        res.status(422).send({message: "missing id"});
+        res.status(422).send({errorMessage: "missing id"});
     }
 };

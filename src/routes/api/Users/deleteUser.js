@@ -10,22 +10,22 @@ module.exports = async function (req, res) {
                     res.status(402).send(err)
                 } else if (doc === null) {
                     res.status(402).send({
-                        message: "Unable to find user with this ID"
+                        errorMessage: "Unable to find user with this ID"
                     })
                 } else {
                     res.status(200).send({
-                        message: "Sucess"
+                        errorMessage: "Sucess"
                     })
                 }
             })
         } else {
             res.status(402).send({
-                message: "Invalid ID"
+                errorMessage: "Invalid ID"
             })
         }
     } else {
         res.status(402).send({
-            message: "Incomplete body"
+            errorMessage: "Incomplete body"
         })
     }
 };

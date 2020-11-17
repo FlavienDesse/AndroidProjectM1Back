@@ -33,14 +33,14 @@ module.exports = function(req, res, next){
             // else send Unauthorized status with error message
             else{
                 res.status(401).send({
-                    message: "Token is not valid"
+                    errorMessage: "Token is not valid"
                 });
             }
         })
     }
     else{
         res.status(401).send({
-            message: "No token provided"
+            errorMessage: "No token provided"
         });
     }
 };

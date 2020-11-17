@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c4af60f-4342-44ee-ade6-888025b7646e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Users/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Users/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,8 @@
       <workItem from="1602445332439" duration="42000" />
       <workItem from="1604670717130" duration="7043000" />
       <workItem from="1605521345579" duration="19526000" />
-      <workItem from="1605609677908" duration="705000" />
+      <workItem from="1605609677908" duration="1304000" />
+      <workItem from="1605617631059" duration="1085000" />
     </task>
     <servers />
   </component>
@@ -153,19 +153,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605569899393" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605609694399">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605617630788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605609694399" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605617630788" />
     <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602445336600" />
     <state x="705" y="336" width="1414" height="747" key="dock-window-1" timestamp="1605530748678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="336" width="1414" height="747" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605530748678" />
-    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1605536281957">
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1605619655824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605536281957" />
+    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605619655824" />
     <state x="342" y="244" key="new project wizard" timestamp="1604670833593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

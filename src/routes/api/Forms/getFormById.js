@@ -11,7 +11,7 @@ module.exports = function (req,res) {
                 }
                 else if(!doc) {
                     res.status(422).send({
-                        message:"No form found with this ID"
+                        errorMessage:"No form found with this ID"
                     });
                 }
                 else{
@@ -19,10 +19,10 @@ module.exports = function (req,res) {
                 }
             })
         } else {
-            res.status(422).send({message: "bad id provided"});
+            res.status(422).send({errorMessage: "bad id provided"});
         }
     } else {
-        res.status(422).send({message: "missing id"});
+        res.status(422).send({errorMessage: "missing id"});
     }
 
 }

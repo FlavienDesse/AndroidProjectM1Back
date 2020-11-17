@@ -49,18 +49,18 @@ module.exports= function (req,res) {
                     }
                     // Incorrect credentials
                     else{
-                        res.status(401).send({message: "Incorrect credentials"});
+                        res.status(401).send({errorMessage: "Incorrect credentials"});
                     }
                 });
             }
             else{
-                res.status(404).send({message: "User not found with this eCrfId"});
+                res.status(404).send({errorMessage: "User not found with this eCrfId"});
             }
 
         })
     }
     // missing credential(s)
     else{
-        res.status(422).send({message: "missing username or password"});
+        res.status(422).send({errorMessage: "missing username or password"});
     }
 }

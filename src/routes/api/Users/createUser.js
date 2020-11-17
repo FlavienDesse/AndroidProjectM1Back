@@ -34,7 +34,7 @@ module.exports = async function (req,res) {
             }
             else if(doc) {
                 res.status(402).send({
-                    message: "Name already in database"
+                    errorMessage: "Name already in database"
                 })
             }
             else{
@@ -49,7 +49,7 @@ module.exports = async function (req,res) {
                             type : 0,
                         });
                         res.status(200).send({
-                            message : "Success"
+                            errorMessage : "Success"
                         })
 
                     }
@@ -59,7 +59,7 @@ module.exports = async function (req,res) {
     }
     else{
         res.status(402).send({
-            message : "Incomplete body"
+            errorMessage : "Incomplete body"
         })
     }
 };
