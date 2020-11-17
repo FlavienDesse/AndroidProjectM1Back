@@ -45,7 +45,7 @@ module.exports= function (req,res) {
 
                         // remove password from user object
                         user.password = undefined;
-                        res.status(200).send({message: "User info",user:user});
+                        res.status(200).send(user);
                     }
                     // Incorrect credentials
                     else{
