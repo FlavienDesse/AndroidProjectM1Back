@@ -54,7 +54,7 @@ module.exports= function (req,res) {
                 });
             }
             else{
-                res.status(202).send({message: "User not found with this eCrfId"});
+                res.status(202).send({message: "User not found with this ID"});
             }
 
         })
