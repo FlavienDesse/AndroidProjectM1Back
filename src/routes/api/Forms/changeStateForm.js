@@ -3,7 +3,7 @@ const Forms = require('../../../../models/Forms')
 const User =  require('../../../../models/User')
 
 module.exports = async function (req, res) {
-    if (req.body._id !== undefined) {
+    if (req.body._id !== undefined &&  typeof(req.body.value=== "boolean") ) {
         if (ObjectId.isValid(req.body._id)) {
             let actualUser = await User.findById(req.user.id);
             if(actualUser){
@@ -12,7 +12,7 @@ module.exports = async function (req, res) {
                         if (err) {
                             res.status(500).send(err);
                         } else if (doc) {
-                            doc.isClosed = true;
+                            doc.isClosed = req.body.value;
                             await doc.save()
                             res.status(200).send({
                                 message : "Success"

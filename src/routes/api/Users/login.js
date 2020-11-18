@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 module.exports = function (req, res) {
     if (req.body.username !== undefined && req.body.password !== undefined) {
 
-        User.findOne({username: req.body.username}).populate("forms").populate('.content').exec(async function (err, user) {
+        User.findOne({username: req.body.username}).populate("forms").exec(async function (err, user) {
             if (err) {
                 res.status(500).send(err);
             } else if (user !== null) {
