@@ -57,7 +57,7 @@ module.exports =async function (req, res) {
             let actualUser = await User.findById(req.user.id);
             let smallId = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
             
-            while(actual.allForms.equal((elem)=> elem.smallId === smallId)){
+            while(actualUser.allForms.equal((elem)=> elem.smallId === smallId)){
                 smallId = Math.random().toString(36).substr(2, 5);
 
             }
