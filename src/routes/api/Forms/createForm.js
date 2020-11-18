@@ -53,6 +53,8 @@ module.exports =async function (req, res) {
                 message: "Incomplete body"
             })
         } else {
+            
+            let allForms =await Forms.find({})
             let smallId = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
             
             while(allForms.equal((elem)=> elem.smallId === smallId)){

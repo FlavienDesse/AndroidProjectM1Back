@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c4af60f-4342-44ee-ade6-888025b7646e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleWare/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleWare/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleWare/isAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleWare/isAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleWare/isAtLeastUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleWare/isAtLeastUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/closeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/closeForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/deleteForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/deleteForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/getFormById.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/getFormById.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Users/createUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Users/createUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Users/deleteUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Users/deleteUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/Users/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Users/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +111,7 @@
       <workItem from="1605521345579" duration="19526000" />
       <workItem from="1605609677908" duration="1304000" />
       <workItem from="1605617631059" duration="3121000" />
+      <workItem from="1605691237980" duration="90000" />
     </task>
     <servers />
   </component>
@@ -163,10 +155,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605569899393" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605617630788">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605691237971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605617630788" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605691237971" />
     <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602445336600" />
     <state x="705" y="336" width="1414" height="747" key="dock-window-1" timestamp="1605530748678">
       <screen x="0" y="0" width="1920" height="1040" />
