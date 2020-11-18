@@ -1,12 +1,13 @@
 const rights = require('./rights');
 
-module.exports = function (req, res, next,level) {
-    if (req.rights.level >= rights[level]) {
+module.exports = async function (req, res, next) {
+    console.log(req.user.type )
+    if (req.user.type !== undefined && req.user.type  >= rights["user"]) {
         next();
     } else {
         res.status(202).send(
             {
-                message: "You need " + level + " rights to do this action",
+                message: "You need user rights to do this action",
             });
     }
 

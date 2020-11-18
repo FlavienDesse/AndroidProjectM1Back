@@ -24,10 +24,6 @@ module.exports = function(req, res, next){
                     type: decoded.type
                 };
 
-                req.rights = {
-                    level: rights[decoded.type]
-                };
-
                 next();
             }
             // else send Unauthorized status with error message

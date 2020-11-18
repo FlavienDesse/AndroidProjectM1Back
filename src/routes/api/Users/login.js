@@ -3,15 +3,15 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 
 
-module.exports= function (req,res) {
-    if(req.body.username !== undefined && req.body.password !== undefined){
-        User.findOne({username: req.body.username}, function (err, user) {
-            if(err){
+module.exports = function (req, res) {
+    if (req.body.username !== undefined && req.body.password !== undefined) {
+
+        User.findOne({username: req.body.username}).populate("forms").populate('content').exec(async function (err, user) {
+            if (err) {
                 res.status(500).send(err);
-            }
-            else if(user !== null){
-                bcrypt.compare(req.body.password, user.password, async function(err, result){
-                    if(result){
+            } else if (user !== null) {
+                bcrypt.compare(req.body.password, user.password, async function (err, result) {
+                    if (result) {
                         let token = jwt.sign(
                             {
                                 id: user._id,
@@ -42,25 +42,26 @@ module.exports= function (req,res) {
                         // place token in 2 cookies (secure way of storing tokens, better way than localStorage)
                         res.cookie('headerPayload', headerPayload, cookieHeaderPayloadConfig);
                         res.cookie('signature', signature, cookieSignatureConfig);
-
                         // remove password from user object
                         user.password = undefined;
-                        res.status(200).send(user);
+
+                        res.send(user)
+
                     }
+
                     // Incorrect credentials
-                    else{
+                    else {
                         res.status(202).send({message: "Incorrect credentials"});
                     }
                 });
-            }
-            else{
+            } else {
                 res.status(202).send({message: "User not found with this ID"});
             }
 
         })
     }
     // missing credential(s)
-    else{
+    else {
         res.status(202).send({message: "missing username or password"});
     }
 }

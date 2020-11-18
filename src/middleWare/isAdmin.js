@@ -1,12 +1,12 @@
 const rights = require('./rights');
 
-module.exports = function (req, res, next,level) {
-    if (req.rights.level === rights[level]) {
+module.exports = function (req, res, next) {
+    if (req.user.type  === rights["admin"]) {
         next();
     } else {
         res.status(202).send(
             {
-                message: "You need " + level + " rights to do this action",
+                message: "You need admin rights to do this action",
             });
     }
 
