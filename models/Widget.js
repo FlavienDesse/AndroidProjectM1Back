@@ -13,6 +13,10 @@ let WidgetSchema = new Schema({
         default:""
     },
 
+    type:{
+      type:Number,
+      required: true
+    },
     /////////Questions => type :0/////////
 
     textFieldResult:{
