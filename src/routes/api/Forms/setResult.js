@@ -6,7 +6,7 @@ module.exports = function (req,res) {
     console.log(ip)
     if (req.body._id !== undefined || req.body.result !== undefined) {
         if (ObjectId.isValid(req.body._id)) {
-            Form.findById(req.body._id,function (err,doc) {
+            Form.findById(req.body._id, async function(err,doc) {
                 if(err){
                     res.status(500).send(err)
                 }
@@ -16,7 +16,8 @@ module.exports = function (req,res) {
                     });
                 }
                 else{
-                    res.status(202).send({
+
+                    res.status(200).send({
                         message:"Sucess"
                     });
                 }

@@ -13,7 +13,7 @@ const setResult = require('./setResult')
 
 
 router.post('/createForm',auth,isAtLeastUser,createForm);
-router.post('/closeForm',auth,isAtLeastUser,changeStateForm);
+router.post('/changeStateForm',auth,isAtLeastUser,changeStateForm);
 router.post('/deleteForm',auth,isAtLeastUser,deleteForm);
 router.post('/getFormById',isAtLeastUser,getFormById);
 router.post('/getFormBySmallID',getFormBySmallID);
