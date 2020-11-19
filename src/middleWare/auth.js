@@ -28,7 +28,7 @@ module.exports = function(req, res, next){
             }
             // else send Unauthorized status with error message
             else{
-                res.status(202).send({
+                res.status(205).send({
                     message: "Token is not valid"
                 });
             }
