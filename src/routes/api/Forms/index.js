@@ -9,7 +9,7 @@ const changeStateForm = require('./changeStateForm');
 const deleteForm = require('./deleteForm');
 const getFormById = require('./getFormById')
 const getFormBySmallID = require('./getFormBySmallID')
-
+const setResult = require('./setResult')
 
 
 router.post('/createForm',auth,isAtLeastUser,createForm);
@@ -17,6 +17,7 @@ router.post('/closeForm',auth,isAtLeastUser,changeStateForm);
 router.post('/deleteForm',auth,isAtLeastUser,deleteForm);
 router.post('/getFormById',isAtLeastUser,getFormById);
 router.post('/getFormBySmallID',getFormBySmallID);
+router.post('/setResult',setResult);
 
 
 

@@ -24,7 +24,10 @@ let FormsSchema = new Schema({
       type:String,
       required:true,
     },
-
+    IPAdressPeopleAnswered:{
+        type:String,
+        default:[]
+    },
 });
 
 

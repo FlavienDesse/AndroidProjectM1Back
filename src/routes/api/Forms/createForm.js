@@ -28,7 +28,7 @@ module.exports =async function (req, res) {
                         temp = new Widget({
                             title: element.title,
                             type: 0,
-                            order,index,
+                            order:index,
                             maxPoint: element.maxPoint,
                             minPoint: element.minPoint,
                         })
