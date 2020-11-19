@@ -10,8 +10,7 @@ function onlyUnique(value, index, self) {
 
 module.exports = function (req, res) {
     let ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
-    console.log(JSON.parse(req.body.result))
-    console.log(req.body)
+
     req.body.result = JSON.parse(req.body.result)
 
     if (req.body._id !== undefined || req.body.result !== undefined) {
