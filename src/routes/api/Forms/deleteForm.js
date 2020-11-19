@@ -9,7 +9,7 @@ module.exports = async function (req, res) {
             let actualUser = await User.findById(req.user.id);
             if(actualUser){
                 if(actualUser.forms.includes(req.body._id)){
-                    Forms.findById(req.body._id).populate("content").exec(async function (error,doc) {
+                    Forms.findById(req.body._id).populate("widget").exec(async function (error,doc) {
                        if(error){
                            res.status(500).send(error)
                        }
@@ -20,7 +20,7 @@ module.exports = async function (req, res) {
                            let pos = actualUser.forms.findIndex((elem)=>req.body._id === elem)
                            actualUser.forms.splice(pos,1);
                            await actualUser.save()
-                           for (let elem of doc.content){
+                           for (let elem of doc.widget){
                                await elem.delete()
                            }
                             doc.delete()

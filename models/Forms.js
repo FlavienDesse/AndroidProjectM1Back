@@ -7,7 +7,7 @@ let FormsSchema = new Schema({
         type:String,
         required: true,
     },
-    content:{
+    widget:{
         type:[{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Widget'

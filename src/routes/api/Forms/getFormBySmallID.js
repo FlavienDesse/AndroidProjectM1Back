@@ -5,7 +5,7 @@ const Forms = require('../../../../models/Forms')
 module.exports = function (req, res) {
     if (req.body.smallID !== undefined) {
         let ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
-        Forms.findOne({smallId : req.body.smallID}).populate("content").exec(async function (error,doc) {
+        Forms.findOne({smallId : req.body.smallID}).populate("widget").exec(async function (error,doc) {
             if(error){
                 res.status(500).send(error)
             }

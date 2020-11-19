@@ -69,7 +69,7 @@ module.exports =async function (req, res) {
                 }
                 let newForm = new Forms({
                     title: req.body.title,
-                    content: arrayOfCreatedWidget,
+                    widget: arrayOfCreatedWidget,
                     isClosed: false,
                     smallId: smallId
                 });

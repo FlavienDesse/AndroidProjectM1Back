@@ -37,7 +37,7 @@ module.exports = function (req, res) {
                         let isEqual = true;
 
 
-                        for (elem of doc.content) {
+                        for (elem of doc.widget) {
                             let find = false;
                             for (elem2 of unique) {
                                 if (elem2._id === elem.toString()) {

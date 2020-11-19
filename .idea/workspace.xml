@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3c4af60f-4342-44ee-ade6-888025b7646e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Forms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/createForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/deleteForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/deleteForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/getFormBySmallID.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/getFormBySmallID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Forms/setResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Forms/setResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/Users/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/Users/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +121,7 @@
       <workItem from="1605704039016" duration="2528000" />
       <workItem from="1605718279274" duration="11420000" />
       <workItem from="1605773012076" duration="5973000" />
-      <workItem from="1605798034143" duration="4479000" />
+      <workItem from="1605798034143" duration="5231000" />
     </task>
     <servers />
   </component>
@@ -170,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="336" width="1414" height="747" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605530748678" />
-    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1605704473784">
+    <state x="725" y="200" width="737" height="606" key="find.popup" timestamp="1605808947435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605704473784" />
+    <state x="725" y="200" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605808947435" />
     <state x="342" y="244" key="new project wizard" timestamp="1604670833593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

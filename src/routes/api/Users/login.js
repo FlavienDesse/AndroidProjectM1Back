@@ -11,7 +11,7 @@ module.exports = function (req, res) {
                 res.status(500).send(err);
             } else if (user !== null) {
                 User.populate(user, {
-                    path: 'forms.content',
+                    path: 'forms.widget',
                     model: 'Widget',
                 }, function (err, result) {
                     if (result) {
