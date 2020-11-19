@@ -9,12 +9,12 @@ module.exports =async function (req, res) {
         let error = false;
         let index = 0;
         for (let element of req.body.arrayWidget) {
-            if (element.title !== undefined && element.type !== undefined) {
+            if (element.question !== undefined && element.type !== undefined) {
                 let temp;
                 if (element.type === 0) {
                     if (element.textField !== undefined) {
                         temp = new Widget({
-                            title: element.title,
+                            question: element.question,
                             type: 0,
                             order:index,
                             textField: element.textField
@@ -26,7 +26,7 @@ module.exports =async function (req, res) {
                 } else if (element.type === 1) {
                     if (element.maxPoint !== undefined && element.minPoint !== undefined) {
                         temp = new Widget({
-                            title: element.title,
+                            question: element.question,
                             type: 0,
                             order:index,
                             maxPoint: element.maxPoint,

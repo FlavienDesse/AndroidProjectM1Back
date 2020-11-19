@@ -11,18 +11,14 @@ let WidgetSchema = new Schema({
         type: Number,
         required: true,
     },
-    type:{
-        type: Number,                                   // Correspond to which type of widget is refer to
-        required: true,
-    },
 
-
-    /////////Questions => type :0/////////
-
-    textField:{
+    question:{
         type: String,
         default:""
     },
+
+    /////////Questions => type :0/////////
+
     textFieldResult:{
         type: [String],
         default:[]
