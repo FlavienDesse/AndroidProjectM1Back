@@ -3,10 +3,6 @@ const Schema = mongoose.Schema;
 
 
 let WidgetSchema = new Schema({
-    title: {
-        type: String,
-        required: true,
-    },
     order: {
         type: Number,
         required: true,
