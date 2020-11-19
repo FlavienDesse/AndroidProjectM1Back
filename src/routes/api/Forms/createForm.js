@@ -21,7 +21,7 @@ module.exports = async function (req, res) {
                     if (element.maxPoint !== undefined && element.minPoint !== undefined) {
                         temp = new Widget({
                             question: element.question,
-                            type: 0,
+                            type: 1,
                             order: index,
                             maxPoint: element.maxPoint,
                             minPoint: element.minPoint,
