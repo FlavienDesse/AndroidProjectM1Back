@@ -64,7 +64,7 @@ module.exports = function (req, res) {
                                         if (widget.type === 0) {
                                             widget.textFieldResult = widget.textFieldResult.concat(element.result)
                                         } else if (widget.type === 1) {
-                                            widget.resultPoint = widget.resultPoint.concat(element.result)
+                                            widget.resultPoint = widget.resultPoint.concat( parseInt( element.result))
                                         }
                                     } else {
                                         error = true;
