@@ -10,6 +10,7 @@ function onlyUnique(value, index, self) {
 
 module.exports = function (req, res) {
     let ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+    console.log(req.body.result)
     if (req.body._id !== undefined || req.body.result !== undefined) {
         if (ObjectId.isValid(req.body._id)) {
             Form.findById(req.body._id, async function (err, doc) {
