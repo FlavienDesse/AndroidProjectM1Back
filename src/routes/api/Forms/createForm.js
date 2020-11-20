@@ -4,7 +4,7 @@ const User = require('../../../../models/User');
 
 
 module.exports = async function (req, res) {
-    if (req.body.title !== undefined && req.body.arrayWidget !== undefined) {
+    if (req.body.title !== undefined && req.body.title !== ""  && req.body.arrayWidget !== undefined) {
         let arrayOfCreatedWidget = [];
         let error = false;
         let index = 0;
