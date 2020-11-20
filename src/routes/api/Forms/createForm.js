@@ -4,13 +4,12 @@ const User = require('../../../../models/User');
 
 
 module.exports = async function (req, res) {
-    if (req.body.title !== undefined && req.body.title !== ""  && req.body.arrayWidget !== undefined) {
+    if (req.body.title !== undefined && req.body.title !== "" && req.body.arrayWidget !== undefined) {
         let arrayOfCreatedWidget = [];
         let error = false;
         let index = 0;
         for (let element of req.body.arrayWidget) {
             if (element.question !== undefined && element.question !== "" && element.type !== undefined) {
-                let temp;
                 if (element.type === 0) {
                     temp = new Widget({
                         question: element.question,
@@ -42,7 +41,13 @@ module.exports = async function (req, res) {
             }
 
         }
-        if (error) {
+
+        if (arrayOfCreatedWidget.length === 0) {
+            res.status(202).send({
+                message: "Incomplete body"
+            })
+
+        } else if (error) {
             res.status(202).send({
                 message: "Incomplete body"
             })
