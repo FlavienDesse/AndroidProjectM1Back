@@ -4,13 +4,12 @@ const User = require('../../../../models/User');
 
 
 module.exports = async function (req, res) {
-    console.log(req.body);
     if (req.body.title !== undefined && req.body.arrayWidget !== undefined) {
         let arrayOfCreatedWidget = [];
         let error = false;
         let index = 0;
         for (let element of req.body.arrayWidget) {
-            if (element.question !== undefined && element.type !== undefined) {
+            if (element.question !== undefined && element.question !== "" && element.type !== undefined) {
                 let temp;
                 if (element.type === 0) {
                     temp = new Widget({
@@ -74,9 +73,24 @@ module.exports = async function (req, res) {
                 await actualUser.save()
                 await newForm.save()
 
-                res.status(200).send({
-                    message: "Success"
-                })
+                User.findById(req.user.id).populate("forms").exec(async function (err, user) {
+                    if (err) {
+                        res.status(500).send(err);
+                    } else if (user !== null) {
+                        User.populate(user, {
+                            path: 'forms.widget',
+                            model: 'Widget',
+                        }, function (err, result) {
+                            if (result) {
+                                user.password = undefined;
+                                res.send(user)
+                            }
+                        })
+                    }
+
+                });
+
+
             } else {
                 res.status(202).send({
                     message: "Error"
