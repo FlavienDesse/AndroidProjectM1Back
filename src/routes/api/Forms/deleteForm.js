@@ -23,10 +23,25 @@ module.exports = async function (req, res) {
                            for (let elem of doc.widget){
                                await elem.delete()
                            }
-                            doc.delete()
-                           res.status(200).send({
-                               message : "Success"
-                           })
+                           await doc.delete()
+
+                           User.findById(req.user.id).populate("forms").exec(async function (err, user) {
+                               if (err) {
+                                   res.status(500).send(err);
+                               } else if (user !== null) {
+                                   User.populate(user, {
+                                       path: 'forms.widget',
+                                       model: 'Widget',
+                                   }, function (err, result) {
+                                       if (result) {
+                                           user.password = undefined;
+                                           res.send(user)
+                                       }
+                                   })
+                               }
+
+                           });
+
                        }
                     })
 
