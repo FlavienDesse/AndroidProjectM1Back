@@ -3,13 +3,7 @@ const Forms = require('../../../../models/Forms')
 const User =  require('../../../../models/User')
 
 module.exports = async function (req, res) {
-
-
-
-
-
-
-
+    
     if (req.body._id !== undefined &&  typeof(req.body.value=== "boolean") ) {
         if (ObjectId.isValid(req.body._id)) {
             let actualUser = await User.findById(req.user.id);
